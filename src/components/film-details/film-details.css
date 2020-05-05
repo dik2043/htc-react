@@ -1,0 +1,49 @@
+.film-details .spinner {
+    min-height: 600px;
+}
+
+.film-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin-top: 6.944vw;
+}
+@media (max-width: 768px) {
+    .film-details {
+        flex-direction: column;
+    }
+}
+
+.film-details__logo {
+    max-width: 450px;
+    width: 45%;
+    margin-right: 3.472vw;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .film-details__logo {
+        max-width: 70%;
+    }
+}
+
+.film-details__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.film-details__title {
+    margin-bottom: 10px;
+}
+
+.film-details__genre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.films-details__duration {
+    font-size: 16px;
+    font-weight: 500;
+}

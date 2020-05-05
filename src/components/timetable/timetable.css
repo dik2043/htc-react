@@ -1,0 +1,56 @@
+
+.timetable {
+    display: table;
+    max-width: 60%;
+    margin-top: 11px;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .timetable {
+        max-width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .timetable {
+        max-width: 100%;
+    }
+}
+.timetable__row {
+    display: table-row;
+}
+.timetable__row--active {
+    color: #E5261E;
+}
+.timetable__cell {
+    display: table-cell;
+    padding: 6px 6px 6px 0;
+}
+.timetable__cell--title {
+    width: 100%;
+    padding-left: 10px;
+}
+.timetable__link {
+    cursor: default;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.timetable__link:hover {
+    opacity: 0.8;
+}
+.timetable__line-container {
+    display: flex;
+    align-items: center;
+    
+    /*width: 100%;*/
+    height: 6px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    
+    background-color: white;
+    border-radius: 4px;
+}
+.timetable__line {
+    height: 4px;
+    background-color: #fc0;
+    border-radius: 3px;
+}
