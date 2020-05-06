@@ -8,7 +8,7 @@ const TimeRow = ({ timeRow, className, now }) => {
     if (className === "timetable__row timetable__row--active") {
         const duration = timeRow.endTime - timeRow.startTime;
         const passedTime = -(timeRow.startTime - now);
-        const lineProgress = (passedTime / duration) * 100;
+        const lineProgress = Math.abs((passedTime / duration) * 100);
         
         timeLine = (
             <div className="timetable__line-container">
@@ -32,7 +32,7 @@ const TimeRow = ({ timeRow, className, now }) => {
 
 const getCurrentTelecastIndex = (timetable) => {
     const now = new Date().getTime();
-    const maxTimeInMilliseconds = 72000000;
+    const maxTimeInMilliseconds = 80000000;
     let min = maxTimeInMilliseconds;
     let currentTelecastIndex = 0;
     
@@ -51,6 +51,7 @@ const getCurrentTelecastIndex = (timetable) => {
             break
         }
     }
+    
     return currentTelecastIndex;
 };
 

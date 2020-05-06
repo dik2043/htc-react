@@ -41,7 +41,7 @@ const App = () => {
                                 }
                             }/>
                             
-                            <Route render={() => <h2>Page not found</h2>} />
+                            <Route component={Films} />
                         </Switch>
                     </div>
                 </main>

@@ -59,7 +59,7 @@ export default class VideoService {
     returnPromiseWithData = (data, timeout) => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                if (Math.random() > 0.9) {
+                if (Math.random() > 0.95) {
                     reject(new Error("Похоже, что-то пошло не так :("));
                 } else {
                     resolve(data)

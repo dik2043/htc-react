@@ -39,7 +39,7 @@ class ChannelsList extends Component {
                 }
             </ul>
         )
-    }    
+    }
 }
 
 
